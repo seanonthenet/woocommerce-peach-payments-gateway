@@ -17,8 +17,7 @@
     		parent::__construct();
 
     		add_action( 'woocommerce_scheduled_subscription_payment_' . $this->id, array( $this, 'scheduled_subscription_payment' ), 10, 3 );
-    		add_action( 'woocommerce_subscriptions_changed_failing_payment_method_peach-payments', array( &$this, 'update_failing_payment_method' ), 10, 3 );
-
+    		add_action( 'woocommerce_subscription_failing_payment_method_updated_peach-payments', [ $this, 'update_failing_payment_method' ], 10, 2 );
     		add_action( 'woocommerce_api_wc_peach_payments_subscriptions', array( &$this, 'process_payment_status') );
     		add_action( 'wcs_resubscribe_order_created', array( $this, 'delete_resubscribe_meta' ), 10 );
     		// Allow store managers to manually set Simplify as the payment method on a subscription

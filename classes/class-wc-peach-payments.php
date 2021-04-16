@@ -117,6 +117,7 @@ class WC_Peach_Payments extends WC_Payment_Gateway {
 			'subscription_amount_changes',
 			'subscription_payment_method_change',
 			'subscription_payment_method_change_admin',
+			'subscription_payment_method_change_customer',
 			'subscription_date_changes',
 			'multiple_subscriptions',
 			'pre-orders'
