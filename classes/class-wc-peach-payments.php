@@ -348,7 +348,7 @@ class WC_Peach_Payments extends WC_Payment_Gateway {
 				'description' => __( 'Select your payment methods. Please make sure you are activated for these payment methods with Peach Payments', 'woocommerce-gateway-peach-payments' ),
 				'options'     => array(
 					'VISA'   => 'VISA',
-					'MASTER' => 'Master Card',
+					'MASTER' => 'Mastercard',
 					'AMEX'   => 'American Express',
 					'DINERS' => 'Diners Club',
 					'EFTSECURE'   => 'EFT Secure',
